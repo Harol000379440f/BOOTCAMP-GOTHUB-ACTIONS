@@ -25,4 +25,4 @@ jobs:
           echo "Installing dependencies..."
           # Add commands to install dependencies here
           echo "Dependencies installed."
-                  
+          echo "add plugins in szh"        
