@@ -1,0 +1,16 @@
+name: workflow strategy
+
+on: push
+
+jobs:
+  first_job:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        message: ["Hola", "CodigoFacilito", "Bootcamp GitHub Action"]
+    
+    steps:
+     - name: Print mensaje
+       run: echo "${{ matrix.message }}"
+
