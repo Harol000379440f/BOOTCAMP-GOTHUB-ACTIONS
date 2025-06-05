@@ -25,4 +25,12 @@ jobs:
           echo "Installing dependencies..."
           # Add commands to install dependencies here
           echo "Dependencies installed."
-          echo "add plugins in szh"        
+          echo "add plugins in szh"
+
+    strategy:
+      matrix:
+        message: ["Hola", "CodigoFacilito", "Bootcamp GitHub Action"]
+    
+      steps:
+      - name: Print mensaje
+      run: echo "${{ matrix.message }}"                
